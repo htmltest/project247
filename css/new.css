@@ -1,0 +1,18 @@
+.window-video-open,
+.window-video-open body {overflow:hidden; position:fixed; left:0; top:0; right:0; bottom:0}
+
+.window-video {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999; background:#242036; user-select:none}
+
+.window-video-close {position:absolute; right:20px; top:20px; z-index:99}
+.window-video-close svg {display:block; fill:rgba(255, 255, 255, 0.8); transition:fill 0.2s; width:24px; height:24px}
+@media (min-width:1200px) {
+    .window-video-close:hover svg {fill:rgba(255, 255, 255, 1)}
+}
+
+.window-video-player {position:absolute; left:150px; top:108px; right:150px; bottom:108px}
+.window-video-player iframe,
+.window-video-player video {display:block; position:absolute; left:0; top:0; width:100%; height:100%}
+
+@media (max-width:1199px) {
+    .window-video-player {left:50%; top:50%; width:90vw; right:auto; bottom:auto; height:50.625vw; transform:translate(-50%, -50%)}
+}

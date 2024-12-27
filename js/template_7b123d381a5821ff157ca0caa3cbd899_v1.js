@@ -476,16 +476,6 @@ $(document).ready(function() {
 
     $("[data-phone-mask]").mask("+7(999)-999-99-99");
 
-	$(".video .playBtn").click(function(e) {
-		e.preventDefault();
-
-		let wrap = $(this).closest(".item");
-		let src = $(this).attr("data-src");
-		src = src.split("v=")[1];
-
-		wrap.html(`<iframe height="315" src="https://www.youtube.com/embed/${src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
-	});
-
 	$(".cookieAccept .btn").click(function() {
 		document.cookie = `ZWSMARTLEGLK_COOKIE_ACCEPT=Y; path=/; max-age=86400`;
 		$(this).closest(".cookieAccept").detach();
