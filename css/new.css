@@ -1,7 +1,7 @@
 .window-video-open,
 .window-video-open body {overflow:hidden; position:fixed; left:0; top:0; right:0; bottom:0}
 
-.window-video {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999; background:#242036; user-select:none}
+.window-video {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999; background:#000000; user-select:none}
 
 .window-video-close {position:absolute; right:20px; top:20px; z-index:99}
 .window-video-close svg {display:block; fill:rgba(255, 255, 255, 0.8); transition:fill 0.2s; width:24px; height:24px}
